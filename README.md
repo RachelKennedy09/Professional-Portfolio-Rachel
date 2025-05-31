@@ -54,5 +54,5 @@ I'm a software development student with a strong background in admin and digital
 ## 📫 Contact  
 Feel free to connect or leave feedback!  
 → GitHub: [@RachelKennedy09](https://github.com/RachelKennedy09)  
-→ Portfolio: _(link will go here once deployed)_
+→ Portfolio:(https://github.com/RachelKennedy09/Professional-Portfolio-Rachel.git)
 
