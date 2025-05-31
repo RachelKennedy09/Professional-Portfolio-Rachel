@@ -1,0 +1,215 @@
+/* Reset and Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f8f6;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding-bottom: 50px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #e0f0e9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #3e5c3e;
+    margin-bottom: 10px;
+  }
+
+  .credentials {
+    font-size: 1.1rem;
+    color: #4b6b5a;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  
+  .specialties {
+    font-size: 1rem;
+    color: #6e8c7a;
+    margin-bottom: 10px;
+  }
+  .profile-pic {
+    width: 100;
+    height: 180px;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3c6e5a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #2e856e;
+  }
+  
+  /* Section Layout */
+
+  button {
+    background-color: #7a9e9f; /* soft sea green */
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #5f8889;
+  }
+  
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-left: 6px solid #a6a1d2;;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  section h2 {
+    font-size: 1.75rem;
+    color: #2f4f3f;
+    margin-bottom: 10px;
+  }
+  
+  section p,
+  section ul {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  ul li {
+    margin-left: 20px;
+    list-style: disc;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #3c6e5a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2e856e;
+  }
+  
+  /* FAQ Section */
+#faq {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 6px solid #a6a1d2; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  section:nth-of-type(even) {
+    background-color: #f0f4f3;
+  }
+  
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #e8f4ee;
+    color: #2f4f3f;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #d7e9e1;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px 15px;
+    background-color: #f4f8f6;
+    border-left: 3px solid #a3cdb3;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f0e9;
+    color: #45695b;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  #testimonials {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fef9f6;
+    border-left: 6px solid #f2c4b9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #f2a89c;
+    border-radius: 8px;
+    font-style: italic;
+    color: #444;
+  }
+  
