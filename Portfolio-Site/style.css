@@ -7,11 +7,15 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f7f8f2;
-  /* soft leafy tone */
+  background-color: #f7f8f2; /* soft leafy tone */
   color: #2c2c2c;
   line-height: 1.6;
-  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
 /* Navigation */
@@ -19,15 +23,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   background-color: #eaf3ec;
-  /* light green pastel */
+  flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #d77a9b;
-  /* soft pink */
 }
 
 .nav-links {
@@ -42,18 +45,20 @@ body {
   font-weight: 500;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  background-image: url("/Portfolio-Site/images/HeroPage.jpeg.jpeg");
+  background-image: url("images/HeroPage.jpeg.jpeg");
   background-size: cover;
   background-position: center;
   height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   color: white;
-  padding: 2rem;
+}
+
+.hero-text {
+  width: 100%;
 }
 
 .hero-text h2 {
@@ -65,40 +70,21 @@ body {
   font-size: 1.1rem;
 }
 
-/* About Section */
-.about,
-.projects,
-.contact {
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.about h2,
-.projects h2,
-.contact h2 {
-  color: #8aaf88;
-  /* leafy header color */
-  margin-bottom: 1rem;
-}
-
+/* About */
 .about-content {
   display: flex;
-  align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
 }
 
-/* profile picture  */
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #d77a9b; /* pink touch */
+  border: 4px solid #d77a9b;
 }
-
-/* skills section */
 
 .skills {
   margin-top: 1.5rem;
@@ -111,7 +97,7 @@ body {
 
 .skills ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 .skills li {
@@ -122,24 +108,64 @@ body {
   font-weight: 500;
 }
 
+/* Projects */
+.project-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  color: #8aaf88;
+  margin-bottom: 0.5rem;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #d77a9b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Contact */
-.contact a {
+footer {
+  background-color: #eaf3ec;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
   color: #d77a9b;
   text-decoration: none;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .hero {
-    height: 40vh;
-  }
-
-  .hero-text h2 {
-    font-size: 1.5rem;
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
