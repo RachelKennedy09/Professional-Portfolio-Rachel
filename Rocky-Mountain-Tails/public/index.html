@@ -1,0 +1,34 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Walk Reports - Rocky Mountain Tails</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"></a>
+</head>
+
+<body>
+    <button id="toggleTheme" style="float: right; margin-top: 10px;">🌙 Toggle Theme</button>
+
+    <h1>Daily Walk Reports</h1>
+
+    <form id="noteForm">
+        <input type="text" id="title" placeholder="Dog's Name or Client" required />
+        <textarea id="content" placeholder="How did the walk go? Any notes about behavior, weather, or incidents?"
+            required></textarea>
+        <button type="submit">Submit Walk Report</button>
+    </form>
+
+
+    <h2>Reports Log</h2>
+    <ul id="notesContainer" style="list-style: none; padding: 0;"></ul>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
