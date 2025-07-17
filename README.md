@@ -20,7 +20,7 @@ Each project has its own dedicated GitHub repository with a README and live site
 A responsive and playful mock business website for a local dog walking and sitting service. Features walker profiles, a booking form, and cheerful branding.
 
 📝 **Now includes:**  
-→ [Dog Notes App](https://github.com/RachelKennedy09/dog-notes-app) — a full-stack tool that allows dog walkers to log and manage walk reports, including authentication and MongoDB integration.
+→ [Dog Notes App] — a full-stack tool that allows dog walkers to log and manage walk reports, including authentication and MongoDB integration.
 
 ---
 
