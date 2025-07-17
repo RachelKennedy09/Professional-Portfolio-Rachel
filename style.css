@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* adjust if your navbar height changes */
+}
 
 body {
   font-family: "Segoe UI", sans-serif;
